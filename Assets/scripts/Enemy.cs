@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour {
 	private void Update () {
 		patrolTimer += Time.deltaTime;
 		if (patrolTimer > patrolTime) {
-			rb.velocity = 0;
+			rb.velocity = Vector2.zero;
 			patrolTimer = 0;
 			direction *= -1;
 		}
